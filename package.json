@@ -1,0 +1,21 @@
+{
+  "name": "reactssr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "errorhandler": "^1.5.0",
+    "express": "^4.15.4",
+    "express-react-views": "^0.10.2",
+    "morgan": "^1.8.2",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  }
+}
