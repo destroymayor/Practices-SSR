@@ -7,7 +7,6 @@ const logger = require("morgan");
 const reactViews = require("express-react-views");
 
 const routes = require("./routes");
-const user = require("./routes/user").Layout;
 
 const app = express();
 
@@ -21,8 +20,6 @@ if ("development" == app.get("env")) {
   app.use(errorHandler());
 }
 
-app.get("/", routes.index);
-app.get("/user", user);
-app.get("*", routes.Error);
+routes(app);
 
 app.listen(process.env.PORT || 5000);

@@ -1,12 +1,14 @@
 const React = require("react");
+const Layout = require("./Layout");
 
 class Index extends React.Component {
   render() {
+    const { title, text } = this.props;
     return (
-      <div style={{ color: "#222" }}>
-        <h1>React + {this.props.title}</h1>
-        <p>hello {this.props.text}</p>
-      </div>
+      <Layout title={title}>
+        <h1>使用: {this.props.title}</h1>
+        <p>Hello {this.props.text}</p>
+      </Layout>
     );
   }
 }

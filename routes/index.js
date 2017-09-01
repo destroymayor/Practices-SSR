@@ -1,7 +1,4 @@
-exports.index = (req, res) => {
-  res.render("index", { text: "ming", title: "Express" });
-};
-
-exports.Error = (req, res) => {
-  res.render("Error");
+module.exports = app => {
+  app.use("/", require("./home"));
+  app.use("*", require("./error"));
 };
